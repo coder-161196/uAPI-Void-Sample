@@ -1,0 +1,14 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <air:AirVoidDocumentReq
+			xmlns:air="http://www.travelport.com/schema/air_v45_0" ShowETR="true" RetrieveProviderReservationDetails="false" TraceId="trace" AuthorizedBy="user" TargetBranch="P*******">
+      <com:BillingPointOfSaleInfo
+				xmlns:com="http://www.travelport.com/schema/common_v45_0" OriginApplication="UAPI"/>
+      <air:VoidDocumentInfo DocumentNumber="1766731973283" DocumentType="E-Ticket"/>
+      <air:VoidDocumentInfo DocumentNumber="1766731973284" DocumentType="E-Ticket"/>
+      <air:VoidDocumentInfo DocumentNumber="1766731973285" DocumentType="E-Ticket"/>
+    </air:AirVoidDocumentReq>
+  </soapenv:Body>
+</soapenv:Envelope>
